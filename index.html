@@ -6,6 +6,26 @@
     <title>Home</title>     
 </head>
 <body>
-    
+    <header>
+        <div class="navbar p-10 shadow-md">
+            <div class="navbar-start">
+              <a id="btn-blog"  class="btn btn-outline">Blog</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+             <span><img class="h-10 w-10 mr-5" src="assets/logo.png" alt=""></span>
+             <span><h1 class="font-bold text-xl">Donate Bangladesh</h1></span>
+            </div>
+            <div class="navbar-end">
+              <a class="btn btn-ghost">
+                <img src="assets/coin.png" alt="" class="h-6 w-6 mr-2"> 
+                <span id="balance-text">55000 BDT</span>
+            </a>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row  justify-center gap-3 p-10">
+            <button id="btn-show-add-money" class="btn btn-outline active">Donation</button>
+            <button id="btn-show-cash-out" class="btn btn-outline">History</button>
+         </div>
+    </header>
 </body>
 </html>
