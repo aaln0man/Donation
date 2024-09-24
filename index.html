@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>     
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <header>
@@ -27,5 +29,88 @@
             <button id="btn-show-cash-out" class="btn btn-outline">History</button>
          </div>
     </header>
+
+    <main>
+        <div id="donation-section" class="flex flex-col items-center gap-5">
+            <div class="card card-side bg-base-100 shadow-xl flex flex-col md:flex-row p-5">
+                <figure>
+                  <img
+                    src="assets/noakhali.png"
+                    alt="Donation" />
+                </figure>
+                <div class="card-body">
+                    <button class="flex items-center space-x-1">
+                      <a class="btn btn-ghost">
+                        <img src="assets/coin.png" alt="" class="h-6 w-6 mr-2"> 
+                        <span id="donation-amount-noakhali">15500 BDT</span>
+                    </a>
+                    </button>
+                  <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                  <p> The recent floods in Noakhali have caused significant damage to <br> homes  infrastructure. Your donation will help provide essential <br> supplies and  to those affected by this disaster. Every contribution, <br> big or small, makes  difference. Please join us in supporting the relief <br> efforts and making a positive impact on the lives of those in need.</p>
+                  <div>
+                    <input id="donation-input-noakhali" type="text" class="input input-bordered focus:border-0 w-full" placeholder="Write Donation Amount" />
+                
+                  </div>
+                  <div>
+                    <button class="btn btn-outline w-full"  onclick="makeDonation('noakhali')">Donate Now</button>
+                  </div>
+                </div>
+              </div>
+        
+         
+    
+        
+            <div class="card card-side bg-base-100 shadow-xl flex flex-col md:flex-row p-5">
+                <figure>
+                  <img
+                    src="assets/feni.png"
+                    alt="Donation" />
+                </figure>
+                <div class="card-body">
+                    <button class="flex items-center space-x-1">
+                      <a class="btn btn-ghost">
+                        <img src="assets/coin.png" alt="" class="h-6 w-6 mr-2"> 
+                        <span id="donation-amount-feni">18300 BDT</span>
+                    </a>
+                    </button>
+                  <h2 class="card-title">Donate for Flood at Feni, Bangladesh</h2>
+                  <p> The recent floods in Feni have caused significant damage to <br> homes  infrastructure. Your donation will help provide essential <br> supplies and  to those affected by this disaster. Every contribution, <br> big or small, makes  difference. Please join us in supporting the relief <br> efforts and making a positive impact on the lives of those in need.</p>
+                  <div>
+                    <input id="donation-input-feni" type="text" class="input input-bordered focus:border-0 w-full" placeholder="Write Donation Amount" />
+                
+                  </div>
+                  <div>
+                    <button class="btn btn-outline w-full" onclick="makeDonation('feni')">Donate Now</button>
+                  </div>
+                </div>
+              </div>
+          
+          
+            <div class="card card-side bg-base-100 shadow-xl flex flex-col md:flex-row p-5">
+                <figure>
+                  <img
+                    src="assets/lakshmipur.png"
+                    alt="Donation" />
+                </figure>
+                <div class="card-body">
+                    <button class="flex items-center space-x-1">
+                      <a class="btn btn-ghost">
+                        <img src="assets/coin.png" alt="" class="h-6 w-6 mr-2"> 
+                        <span id="donation-amount-lakshmipur">12500 BDT</span>
+                    </a>
+                    </button>
+                  <h2 class="card-title">Donate for Flood at Lakshmipur, Bangladesh</h2>
+                  <p> The recent floods in Lakshmipur have caused significant damage to <br> homes  infrastructure. Your donation will help provide essential <br> supplies and  to those affected by this disaster. Every contribution, <br> big or small, makes  difference. Please join us in supporting the relief <br> efforts and making a positive impact on the lives of those in need.</p>
+                  <div>
+                    <input id="donation-input-lakshmipur" type="text" class="input input-bordered focus:border-0 w-full" placeholder="Write Donation Amount" />
+                
+                  </div>
+                  <div>
+                    <button class="btn btn-outline w-full"  onclick="makeDonation('lakshmipur')">Donate Now</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </main>
 </body>
 </html>
