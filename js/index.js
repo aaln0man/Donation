@@ -83,3 +83,7 @@ document.getElementById('btn-show-cash-out').onclick = function() {
 document.getElementById('btn-blog').onclick = function() {
     window.location.href = 'blog.html';
 };
+
+document.getElementById('close-modal').onclick = function() {
+    document.getElementById('static-modal').classList.add('hidden');
+};
