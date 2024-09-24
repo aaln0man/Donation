@@ -79,3 +79,7 @@ document.getElementById('btn-show-cash-out').onclick = function() {
     this.classList.add('active');
     document.getElementById('btn-show-add-money').classList.remove('active');
 };
+
+document.getElementById('btn-blog').onclick = function() {
+    window.location.href = 'blog.html';
+};

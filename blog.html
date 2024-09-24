@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/c85695539b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div class="navbar p-10 shadow-md">
+            <div class="navbar-start">
+              <a id="btn-home" class="btn btn-outline">Home</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <span><img class="h-10 w-10 mr-5" src="assets/logo.png" alt=""></span>
+             <span><h1 class="font-bold text-xl">Donate Bangladesh</h1></span>
+            </div>
+            <div class="navbar-end">
+              <a class="btn btn-ghost">
+                <img src="assets/coin.png" alt="" class="h-6 w-6 mr-2"> 
+                <span id="balance-text">55000 BDT</span>
+            </a>
+            </div>
+          </div>
+    </header>
+
+    <main>
+      <div class="p-10">
+        <div class="flex ml-2 pb-10">
+            <h1 class="font-bold text-4xl">Important FAQ</h1>
+            <i class="fa-regular fa-circle-question"></i>
+           </div>
+    
+            <div class="join join-vertical w-full">
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" checked="checked" />
+                  <div class="collapse-title text-xl font-medium"> What is the Document Object Model (DOM)?</div>
+                  <div class="collapse-content">
+                    <p>The Document Object Model (DOM) is a cross-platform and language-independent interface that treats an HTML or XML document as a tree structure wherein each node is an object representing a part of the document.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                  <div class="collapse-content">
+                    <p>JavaScript provides several methods to select DOM elements.</p>
+                    <ul class="list-disc pl-5">
+                      <li>getElementById</li>
+                      <li>getElementsByClassName</li>
+                      <li>getElementsByTagName</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                  <div class="collapse-content">
+                    <p>Event Delegation is basically a pattern to handle events efficiently. Instead of adding an event listener to each and every similar element, we can add an event listener to a parent element and call an event on a particular target using the .target property of the event object.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                  <div class="collapse-content">
+                    <p>The setAttribute() method sets a new value to an attribute.</p>
+                  </div>
+                </div>
+             
+           </div>
+      </div>
+    </main>
+    <script>
+      document.getElementById('btn-home').onclick = function() {
+            window.location.href = 'index.html';
+        };
+    </script>
+    
+</body>
+<footer class="p-10 shadow-md"></footer>
+</html>
